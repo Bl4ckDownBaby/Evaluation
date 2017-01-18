@@ -19,7 +19,7 @@ if(isset($_GET['order']) && isset($_GET['column']))
 {
 	// Correction des "colum" en "column" ainsi que de "ordre" en "order"
 	if($_GET['column'] == 'lastname'){$order = ' ORDER BY lastname';}
-	elseif($_GET['column'] = 'firstname'){$order = ' ORDER BY firstname';}
+	elseif($_GET['column'] == 'firstname'){$order = ' ORDER BY firstname';}
 	elseif($_GET['column'] == 'birthdate'){$order = ' ORDER BY birthdate';}
 	if($_GET['order'] == 'asc'){$order.= ' ASC';}
 	elseif($_GET['order'] == 'desc'){$order.= ' DESC';}
