@@ -1,0 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
