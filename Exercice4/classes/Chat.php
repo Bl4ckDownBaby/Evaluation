@@ -3,11 +3,48 @@
 // Création d'une nouvelle classe Chat
 class Chat
 {
-  public $prenom;
-  public $age;
-  public $couleur;
-  public $sexe;
-  public $race;
+  private $prenom;
+  private $age;
+  private $couleur;
+  private $sexe;
+  private $race;
+
+  // On va définir les setters/getters pour chaques propriétés
+  public function setPrenom($prenom){
+		$this->prenom = $prenom;
+	}
+
+	public function getAge(){
+		return $this->age;
+	}
+
+	public function setAge($age){
+		$this->age = $age;
+	}
+
+	public function getCouleur(){
+		return $this->couleur;
+	}
+
+	public function setCouleur($couleur){
+		$this->couleur = $couleur;
+	}
+
+	public function getSexe(){
+		return $this->sexe;
+	}
+
+	public function setSexe($sexe){
+		$this->sexe = $sexe;
+	}
+
+	public function getRace(){
+		return $this->race;
+	}
+
+	public function setRace($race){
+		$this->race = $race;
+	}
 
 
   function __construct($prenom, $age, $couleur, $sexe, $race)
